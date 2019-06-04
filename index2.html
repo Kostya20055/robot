@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		img {
+			width: 400px;
+			position: absolute;
+			margin-left: 40%;
+			margin-top: 15%
+		}
+	</style>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<img src="fry.png" alt="" style="display: none" class="robot">
+	<img src="notrobot.jpg" alt="" style="display: none" class="notrobot">
+
+
+	<div class="mx-auto col-4 father" style="margin-top: 300px">
+		<h1>Прежде чем пройти дальше. Докажите нам что вы не робот.</h1>
+		<h1 class="text-danger">Введите номер  85763</h1>
+		<input class="pole" size="30">
+		<button class="send ">отправить</button>	
+		<h1 class="vihod" style="color: red"></h1>	
+	</div>
+
+	<script>
+		let inp = document.querySelector(".pole")
+		let butt = document.querySelector(".send")
+		butt.onclick = function(){
+			alert(inp.value)
+
+			if  ( inp.value == 85763  ) {
+			alert("правильно")
+			} else{
+				alert("неправелтно")
+			}
+
+		}
+		
+	</script>
+</body>
+</html>
